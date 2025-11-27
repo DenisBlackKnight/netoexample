@@ -16,15 +16,15 @@ int main(int argc, char** argv)
 
 
 	std::ifstream fwords("РСФ2.txt"); 
-	char value_buffer [10];
+	int value_buffer;
 
 	if (fwords.is_open())
 	{
 		fwords >> value_buffer;
-		double* arr_ptr{ new double[atoi(value_buffer)] };
-		read_arr(arr_ptr,fwords,atoi(value_buffer));
+		double* arr_ptr{ new double[value_buffer] };
+		read_arr(arr_ptr,fwords,value_buffer);
 		fwords.close();
-		print_arr(arr_ptr, atoi(value_buffer));
+		print_arr(arr_ptr, value_buffer);
 		delete[] arr_ptr;
 		
 
@@ -38,20 +38,14 @@ int main(int argc, char** argv)
 
 void read_arr(double* arr_ptr, std::ifstream&  fwords,int a)
 {
-	if (a == 1) {
-		fwords >> arr_ptr[0];
-	}
-	else {
-		fwords >> arr_ptr[0];
-		if (fwords.eof())
-			for (int i{ 1 }; fwords >> arr_ptr[i] && !fwords.eof(); ++i) {}
-	}
+	
+			for (int i{ 0 }; fwords >> arr_ptr[i] && !fwords.eof(); ++i) {}
 	
 }
 
 void print_arr(double* arr_ptr, int value_buffer)
 {
-	for (int i{ value_buffer -1}; !(i<0); --i)
+	for (int i{ (value_buffer -1)}; i >= 0; --i)
 	{
 		std::cout << arr_ptr[i] << ' ';
 
