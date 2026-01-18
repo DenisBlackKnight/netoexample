@@ -6,9 +6,12 @@ class Counter {
 private:
     double value{ 1 };
 public:
-    void start(double num)
+    Counter()
     {
-        this->value = num;
+    }
+    Counter(double num)
+    {
+        value = num;
     }
     void increment()
     {
@@ -29,7 +32,7 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    Counter count;
+    Counter * count = nullptr;
     std::string command;
     double num{0};
 
@@ -41,11 +44,12 @@ int main()
         {
             std::cout << "Введите число :";
             std::cin >> num;
-            count.start(num);
+            count = new Counter{ num };
             break;
         }
         else if (command == "нет" || command == "Нет") 
         {
+            count = new Counter;
             break;
         }
         else
@@ -56,16 +60,21 @@ int main()
     do {
         std::cout << "Введите команду ('+', '-', '=' или 'x'):";
         std::cin >> command;
+
         switch (command[0]) {
         case '+':
-            count.increment(); break;
+            (*count).increment(); break;
         case '-':
-            count.decrement(); break;
+            (*count).decrement(); break;
         case '=':
-            std::cout << count.view_val()<<'\n'; break;
+            std::cout << (*count).view_val()<<'\n'; break;
         case 'x':
         case 'х':break;
         }
    
     } while(!(command == "x" || command == "х"));
+
+    delete count;
+    count = nullptr;
 }
+
