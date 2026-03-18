@@ -1,26 +1,26 @@
-#include "MathFunctions.h"
-int addition(int*& a, int*& b)
+﻿#include "MathFunctions.h"
+int addition(const int& a, const int& b)
 {
-	return *a + *b;
+	return a + b;
 }
-int substraction(int*& a, int*& b)
+int substraction(const int& a, const int& b)
 {
-	return *a - *b;
+	return a - b;
 }
-int multiplication(int*& a, int*& b)
+int multiplication(const int& a, const int& b)
 {
-	return *a * *b;
+	return a * b;
 }
-double division(int*& a, int*& b)
+double division(const int& a, const int& b)
 {
-	return static_cast<double>(*a) / *b;
+	return static_cast<double>(a) / b;
 }
-int exponentiation(int*& a, int*& b)
+int exponentiation(const int & a, const int & b)
 {
-	int power{ *a };
-	for (int i{}; i < *b; i++)
+	int power{ 1 };
+	for (int i{}; i < b; i++)
 	{
-		power *= *a;
+		power *= a;
 	}
 	return power;
 }

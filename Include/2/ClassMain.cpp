@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include "Class.h"
 
 
@@ -45,4 +45,5 @@ int main()
 		if (ch == 'x')
 			break;
 	}
+	delete b;
 }

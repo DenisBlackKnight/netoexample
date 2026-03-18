@@ -1,12 +1,12 @@
-#pragma once
+п»ї#pragma once
 #include "Triangle.h"
 
 class Triangle_RS : public Triangle
 {
-	//поля = A B C a b c from Triangle
+	//РїРѕР»СЏ = A B C a b c from Triangle
 public:
-	//конструкторы
+	//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 	Triangle_RS(int A, int B, int C, int a, int b, int c, int sides_count);
-	//методы
+	//РјРµС‚РѕРґС‹
 	bool check() override;
 };
