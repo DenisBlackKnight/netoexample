@@ -1,15 +1,15 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 class Figure
 {
-	//Поля
+	//РџРѕР»СЏ
 protected:
 	int sides_count;
-	//Конструкторы
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 public:
 	Figure();
 	Figure(int a);
-	//Методы
+	//РњРµС‚РѕРґС‹
 	virtual void get();
 	virtual bool check();
 };

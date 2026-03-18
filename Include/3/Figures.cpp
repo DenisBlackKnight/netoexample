@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "Figure.h"
 #include "Triangle.h"
 #include "Triangle_Pryam.h"
@@ -9,24 +9,24 @@
 #include "QuadranglePryam_Square.h"
 #include "Quadrangle_Parallel.h"
 #include "Quadrangle_Romb.h"
-//Классы
+//РљР»Р°СЃСЃС‹
 
 
-//Треугольники
-
-
-
-
-
-//Четырёхугольники
+//РўСЂРµСѓРіРѕР»СЊРЅРёРєРё
 
 
 
 
 
-//Для массивов можно просто передать аргументы с нулём либо сделать по умолчанию которая также передаёт нули
+//Р§РµС‚С‹СЂС‘С…СѓРіРѕР»СЊРЅРёРєРё
 
-//Функции
+
+
+
+
+//Р”Р»СЏ РјР°СЃСЃРёРІРѕРІ РјРѕР¶РЅРѕ РїСЂРѕСЃС‚Рѕ РїРµСЂРµРґР°С‚СЊ Р°СЂРіСѓРјРµРЅС‚С‹ СЃ РЅСѓР»С‘Рј Р»РёР±Рѕ СЃРґРµР»Р°С‚СЊ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РєРѕС‚РѕСЂР°СЏ С‚Р°РєР¶Рµ РїРµСЂРµРґР°С‘С‚ РЅСѓР»Рё
+
+//Р¤СѓРЅРєС†РёРё
 void print_info(Figure& object, std::string object_name)
 {
 	std::cout << object_name + ": \n";
@@ -34,14 +34,14 @@ void print_info(Figure& object, std::string object_name)
 	std::cout << '\n';
 }
 
-//Программа
+//РџСЂРѕРіСЂР°РјРјР°
 int main()
 {
 	Figure object0(0);
 	print_info(object0, "Any Figure");
 	Figure object00(5);
 	print_info(object00, "Any Figure");
-	//Треугольники
+	//РўСЂРµСѓРіРѕР»СЊРЅРёРєРё
 	Triangle object1(50, 70, 60, 56, 78, 89, 0);
 	print_info(object1, "Any Triangle");
 	Triangle object11(90, 0, 90, 56, 78, 89, 3);
@@ -62,7 +62,7 @@ int main()
 	Triangle_RB object44(60, 60, 60, 5, 5, 5, 3);
 	print_info(object44, "Equilateral Triangle");
 
-	//Четырёхугольники
+	//Р§РµС‚С‹СЂС‘С…СѓРіРѕР»СЊРЅРёРєРё
 	Quadrangle object5(67, 67, 50, 90, 60, 56, 78, 89, 3);
 	print_info(object5, "Any Quadrangle");
 	Quadrangle object55(60, 100, 90, 110, 60, 5, 5, 5, 4);

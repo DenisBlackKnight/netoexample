@@ -1,4 +1,4 @@
-#include "Quadrangle.h"
+﻿#include "Quadrangle.h"
 
 
 Quadrangle::Quadrangle(int A, int B, int C, int D, int a, int b, int c, int d, int sides_count) :Figure(sides_count)

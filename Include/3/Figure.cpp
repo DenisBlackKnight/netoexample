@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "Figure.h"
 
 	Figure::Figure()
@@ -9,7 +9,7 @@
 	{
 		sides_count = { a };
 	}
-	//Методы
+	//РњРµС‚РѕРґС‹
 	void Figure::get()
 	{
 		if (check())
