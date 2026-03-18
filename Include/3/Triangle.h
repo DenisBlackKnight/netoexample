@@ -9,7 +9,7 @@ protected:
 	int a, b, c;
 public:
 	//конструкторы
-	Triangle(int A, int B, int C, int a, int b, int c, int sides_count) :Figure(sides_count);
+	Triangle(int A, int B, int C, int a, int b, int c, int sides_count);
 	//методы
 	void get() override;
 	bool check() override;

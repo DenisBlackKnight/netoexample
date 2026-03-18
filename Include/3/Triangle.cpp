@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Triangle.h"
 
 Triangle::Triangle(int A, int B, int C, int a, int b, int c, int sides_count) :Figure(sides_count)
@@ -17,7 +16,7 @@ void Triangle::get()
 		std::cout << "True\n";
 	else
 		std::cout << "False\n";
-	std::cout << "Angles: A = " << A << " B = " << B << " C = " << C << "\n Sides: a = " << a << " b = " << b << " c = " << c << " \nSide's count:" << sides_count << '\n';
+	std::cout << "Angles: A = " << A << " B = " << B << " C = " << C << "\nSides: a = " << a << " b = " << b << " c = " << c << " \nSide's count:" << sides_count << '\n';
 };
 bool Triangle::check()
 {
