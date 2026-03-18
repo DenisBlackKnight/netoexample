@@ -15,13 +15,22 @@ double division(const int& a, const int& b)
 {
 	return static_cast<double>(a) / b;
 }
-int exponentiation(const int & a, const int & b)
+double exponentiation(const int & a, const int & b)
 {
-	int power{ 1 };
-	for (int i{}; i < b; i++)
-	{
-		power *= a;
+	double power{ 1 };
+	if (b >= 0) {
+		for (int i{}; i < b; i++)
+		{
+			power *= a;
+		}
 	}
+	else if (b < 0) {
+		for (int i{}; i > b; i--)
+		{
+			power /= a;
+		}
+	}
+
 	return power;
 }
 
