@@ -28,4 +28,5 @@ int main(int argv, char** argc)
 	}
 	delete a;
 	delete b;
+	delete select;
 }
