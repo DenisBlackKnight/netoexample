@@ -11,19 +11,19 @@ Quadrangle::Quadrangle(int A, int B, int C, int D, int a, int b, int c, int d, i
 		this->b = b;
 		this->c = c;
 		this->d = d;
-	};
+	}
 	void Quadrangle::get()
 	{
 		if (check())
 			std::cout << "True\n";
 		else
 			std::cout << "False\n";
-		std::cout << "Angles: A = " << A << " B = " << B << " C = " << C << " D = " << D << "\n Sides: a = " << a << " b = " << b << " c = " << c << " d = " << d << " \nSide's count:" << sides_count << '\n';
-	};
+		std::cout << "Angles: A = " << A << " B = " << B << " C = " << C << " D = " << D << "\nSides: a = " << a << " b = " << b << " c = " << c << " d = " << d << " \nSide's count:" << sides_count << '\n';
+	}
 	bool Quadrangle::check()
 	{
 		if ((A + B + C + D) == 360 && sides_count == 4)
 			return 1;
 		else
 			return 0;
-	};
+	}

@@ -1,4 +1,4 @@
-#include "Triangle.h"
+п»ї#include "Triangle.h"
 
 Triangle::Triangle(int A, int B, int C, int a, int b, int c, int sides_count) :Figure(sides_count)
 {
@@ -8,8 +8,8 @@ Triangle::Triangle(int A, int B, int C, int a, int b, int c, int sides_count) :F
 	this->a = a;
 	this->b = b;
 	this->c = c;
-};
-//методы
+}
+//РјРµС‚РѕРґС‹
 void Triangle::get()
 {
 	if (check())
@@ -24,4 +24,4 @@ bool Triangle::check()
 		return 1;
 	else
 		return 0;
-};
+}

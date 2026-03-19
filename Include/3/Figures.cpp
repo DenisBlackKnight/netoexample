@@ -1,32 +1,6 @@
 ﻿#include <iostream>
-#include "Figure.h"
-#include "Triangle.h"
-#include "Triangle_Pryam.h"
-#include "Triangle_RB.h"
-#include "Triangle_RS.h"
-#include "Quadrangle.h"
-#include "Quadrangle_Pryam.h"
-#include "QuadranglePryam_Square.h"
-#include "Quadrangle_Parallel.h"
-#include "Quadrangle_Romb.h"
-//Классы
+#include "Figures.h"
 
-
-//Треугольники
-
-
-
-
-
-//Четырёхугольники
-
-
-
-
-
-//Для массивов можно просто передать аргументы с нулём либо сделать по умолчанию которая также передаёт нули
-
-//Функции
 void print_info(Figure& object, std::string object_name)
 {
 	std::cout << object_name + ": \n";
