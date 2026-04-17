@@ -1,0 +1,11 @@
+﻿#pragma once
+#include "Figure.h"
+#include "Triangle.h"
+#include "Triangle_Pryam.h"
+#include "Triangle_RB.h"
+#include "Triangle_RS.h"
+#include "Quadrangle.h"
+#include "Quadrangle_Pryam.h"
+#include "QuadranglePryam_Square.h"
+#include "Quadrangle_Parallel.h"
+#include "Quadrangle_Romb.h"
